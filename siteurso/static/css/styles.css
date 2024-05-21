@@ -1,105 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+:root{
+    --font: "Almarai", sans-serif;
+    --main-color: #5A3632;
+    --font-color: #FEFFF8;
 }
 
-header {
-    background-color: #FFD700; /* Cor amarela */
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    text-align: none;
+    font-family: var(--font);
+}
+html, body{
+    height: 100%;
+}
+header{
+    background-color: var(--main-color);
+}
+header > nav > ul{
+    list-style: none;
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000; /* Preto */
-    font-weight: bold;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
+    align-items: center;
     padding: 20px;
 }
-
-.urso-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.urso-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    width: 200px;
-}
-
-.urso-foto {
-    max-width: 100%;
-    height: auto;
-}
-.container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-}
-
-.form-container {
-    width: 300px; /* Largura do formulário */
-    text-align: center;
-}
-
-
-.urso-details {
-    text-align: center;
-}
-
-.field-container {
-    background-color: #FFD700; /* Cor amarela */
-    border: 2px solid #FFD700; /* Cor da borda */
-    border-radius: 10px; /* Borda arredondada */
-    margin: 10px auto; /* Margem externa para espaçamento */
-    max-width: 300px; /* Largura máxima */
-    padding: 10px; /* Preenchimento interno */
-}
-
-.field-name {
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 5px;
+    padding: 12px;
 }
 
-.field-value {
-    font-size: 18px;
-}
-
-.field-value img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    display: block; /* Para garantir que a imagem tenha seu próprio espaço */
-}
-.form-container {
+footer{
+    background-color: var(--main-color);
+    padding: 8px;
+    color: var(--font-color);
     text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Alinhar ao topo */
-    height: 100vh;
+    font-weight: lighter;
 }
