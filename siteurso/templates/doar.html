@@ -1,0 +1,30 @@
+{% extends 'global/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="form-container">
+
+        <div class="image-container"><img  src="https://img.freepik.com/fotos-gratis/urso-pardo-majestoso-andando-na-floresta-nevada-gerada-por-ia_188544-21340.jpg?w=900&t=st=1716295494~exp=1716296094~hmac=0d07ab7a1bd7ebd2478c459ffa51e4ff9715421a7aeeb3f35e26ff27e3106e99" alt=""></div>
+        
+        <h1>Faça uma Doação</h1>
+        <form method="post">
+            {% csrf_token %}
+
+            
+            
+            <div class="form-group">
+                <label for="username">Seu email</label>
+                <input type="email" id="username" name="username" placeholder="Digite seu email">
+            </div>
+            
+            <div class="form-group">
+                <label for="value">Valor</label>
+                <input type="text" id="value" name="value" placeholder="Digite um valor">
+            </div>
+            
+            <button class="btn-submit">Doar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

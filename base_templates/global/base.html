@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Ursos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'global/css/styles.css' %}">
+</head>
+<body>
+    {% include 'global/parciais/_header.html' %}
+    <main>
+        <!-- Conteúdo da página -->
+        {% block content %}{% endblock %}
+    </main>
+    {% include 'global/parciais/_footer.html' %}
+
+</body>
+</html>
