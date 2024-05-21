@@ -5,7 +5,6 @@
     --main-color: #5A3632;
     --font-color: #FEFFF8;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +13,16 @@
 }
 html, body{
     height: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header{
     background-color: var(--main-color);
@@ -32,7 +41,9 @@ header > nav > ul > li > a{
     font-weight: bold;
     padding: 12px;
 }
-
+main{
+    flex: 1;
+}
 footer{
     background-color: var(--main-color);
     padding: 8px;
@@ -40,3 +51,4 @@ footer{
     text-align: center;
     font-weight: lighter;
 }
+

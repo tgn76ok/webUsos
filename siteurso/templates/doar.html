@@ -1,18 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
-    <div class="form-container">
-        <h1>Faça uma Doação</h1>
+<link rel="stylesheet" href="../static/css/donation.css">
+<section>
+    <div class="form">
+        <div class="image">
+            <img src="https://cdn.britannica.com/41/156441-050-A4424AEC/Grizzly-bear-Jasper-National-Park-Canada-Alberta.jpg" alt="foto urso">
+        </div>
+        <h1>Faça sua Doação</h1>
         <form method="post">
             {% csrf_token %}
-            <label for="username">Nome de usuário:</label>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="valor">Valor da doação:</label>
-            <input type="number" id="valor" name="valor"><br><br>
+            <label for="username">Nome:</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" placeholder="Digite um valor" required>
             <button type="submit">Doar</button>
         </form>
     </div>
-</div>
+</section>
 {% endblock %}
 

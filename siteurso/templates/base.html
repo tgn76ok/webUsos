@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'doar' %}">Doar</a></li>
-                <li><a href="{% url 'ursos' %}">Ursos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Conteúdo da página -->
-        {% block content %}{% endblock %}
-    </main>
-    <footer>
-        2024 &copy todos os direitos reservados ao Fã Clube do PomPom
-    </footer>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'doar' %}">Doar</a></li>
+                    <li><a href="{% url 'ursos' %}">Ursos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Conteúdo da página -->
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            2024 &copy; todos os direitos reservados ao Fã clube do pompom
+        </footer>
+    </div>
 </body>
 </html>
