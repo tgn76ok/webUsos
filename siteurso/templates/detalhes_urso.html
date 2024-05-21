@@ -1,0 +1,18 @@
+{% extends 'global/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="urso-details">
+        <h2>{{ urso.nome }}</h2>
+        <div class="field-container">
+            <div class="field-name">Idade:</div>
+            <div class="field-value">{{ urso.idade }}</div>
+        </div>
+        <div class="field-container">
+            <div class="field-name">História:</div>
+            <div class="field-value">{{ urso.historia }}</div>
+        </div>
+        <img src="{{ urso.foto.url }}" alt="{{ urso.nome }}">
+    </div>
+</div>
+{% endblock %}
