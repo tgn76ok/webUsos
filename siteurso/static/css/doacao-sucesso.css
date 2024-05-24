@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+h1{
+    font-size: 30px;
+    background-color: #5A3632;
+    color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+p{
+    font-size: 20px;
+}

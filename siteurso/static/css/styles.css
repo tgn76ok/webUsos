@@ -10,6 +10,7 @@
     padding: 0;
     text-align: none;
     font-family: var(--font);
+    overflow-y: hidden;
 }
 html, body{
     height: 100%;
