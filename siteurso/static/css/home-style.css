@@ -5,7 +5,6 @@
     --main-color: #5A3632;
     --font-color: #FEFFF8;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -14,4 +13,13 @@
 }
 html, body{
     height: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+h1{
+    font-size: 30px;
 }
