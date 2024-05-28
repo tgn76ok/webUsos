@@ -11,10 +11,7 @@
 }
 
 .card{
-
     flex: 1 1 150px;
-
-
     height: 350px;
     min-width: 150px;
     display: flex;

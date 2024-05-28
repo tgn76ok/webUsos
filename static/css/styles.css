@@ -80,7 +80,7 @@ main {
     border-radius: 10px; /* Borda arredondada */
     margin: 10px auto; /* Margem externa para espaçamento */
     max-width: 300px; /* Largura máxima */
-    padding: 10px; /* Preenchimento interno */
+    padding: 10px; 
 }
 
 .field-name {
