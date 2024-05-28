@@ -1,21 +1,32 @@
-{% extends 'base.html' %}
+{% extends 'global/base.html' %}
 {% load static %}
 
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/detalhes-style.css' %}">
+<link rel="stylesheet" href="{% static 'global/css/detalhes-style.css' %}">
 
-<div class="container">
+<div class="container-Des">
     <div class="urso-details">
         <h2>{{ urso.nome }}</h2>
-        <img src="{{ urso.foto.url }}" alt="{{ urso.nome }}">
-        <div class="field-container">
-            <div class="field-name">Idade:</div>
-            <div class="field-value">{{ urso.idade }}</div>
+        
+        <div class="Conteudo-detalhes">
+            <div class="left-detalhes">
+
+                <img src="{{ urso.foto.url }}" alt="{{ urso.nome }}">
+            </div>
+    
+            <div class="right-detalhes">
+                <div class="field-container">
+                    <div class="field-name">Idade:</div>
+                    <div class="field-value">{{ urso.idade }}</div>
+                </div>
+                <div class="field-container">
+                    <div class="field-name">História:</div>
+                    <div class="field-value">{{ urso.historia }}</div>
+                </div>
+
+            </div>
         </div>
-        <div class="field-container">
-            <div class="field-name">História:</div>
-            <div class="field-value">{{ urso.historia }}</div>
+
         </div>
-    </div>
 </div>
 {% endblock %}

@@ -1,17 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'global/base.html' %}
+{% load static %}
 
 {% block content %}
-<link rel="stylesheet" href="../static/css/ursos-style.css">
+<link rel="stylesheet" href="{% static 'global/css/ursos-style.css' %}">
+
 <h1>Nossos Ursos</h1>
 <div class="urso-list">
     {% for urso in ursos %}
-        <div class="container">
-            <div class="card">
+        <div class="card">
             <a href="{% url 'detalhes_urso' urso.id %}">
-            <img src="{{ urso.foto.url }}" alt="{{ urso.nome }}" class="urso-imagem">
+                <img src="{{ urso.foto.url }}" alt="{{ urso.nome }}" class="urso-imagem">
             </a>
             <h2>{{ urso.nome }}</h2>
-            </div>
         </div>
     {% endfor %}
 </div>

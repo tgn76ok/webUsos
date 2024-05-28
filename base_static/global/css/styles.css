@@ -17,11 +17,6 @@ main {
     height: 80.8vh;
 }
 
-.urso-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 .urso-item {
     border: 1px solid #ccc;

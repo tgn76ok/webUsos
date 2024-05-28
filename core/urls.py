@@ -24,10 +24,5 @@ urlpatterns = [
     path('', include('siteurso.urls')),
 ]
 
-<<<<<<< HEAD
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-=======
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
->>>>>>> 3b6a98d641eb06fce2ff737a6d93776dd5666ab7

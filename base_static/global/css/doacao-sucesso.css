@@ -1,11 +1,11 @@
-main{
+.MianDoar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F5F5F5;
 }
-h1{
+.MianDoar > h1{
     font-size: 30px;
     background-color: #5A3632;
     color: #F5F5F5;
@@ -13,6 +13,6 @@ h1{
     border-radius: 10px;
     margin-bottom: 12px;
 }
-p{
+.MianDoar > p{
     font-size: 20px;
 }

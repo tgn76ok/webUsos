@@ -1,7 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Urso,Doacao
-<<<<<<< HEAD
-=======
 from django.shortcuts import render
 from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator
@@ -10,7 +8,6 @@ def home(request):
     
     Docera = Doacao.objects.all().order_by('-valor')[:10]
     return render(request, 'home.html',{'maiores_doacoes':Docera})
->>>>>>> 3b6a98d641eb06fce2ff737a6d93776dd5666ab7
 
 def detalhes_urso(request, urso_id):
     urso = get_object_or_404(Urso, pk=urso_id)
@@ -21,17 +18,6 @@ def maiores_doacoes(request):
     maiores_doacoes = Doacao.objects.order_by('-valor')[:10]  # Obtém as 10 maiores doações
     return render(request, 'maiores_doacoes.html', {'maiores_doacoes': maiores_doacoes})
 
-<<<<<<< HEAD
-def home(request):
-    return render(request, 'home.html')
-
-def doar(request):
-    if request.method == 'POST':
-        valor = request.POST.get('valor')
-        username = request.POST.get('username')
-        Doacao.objects.create(valor=valor, username=username)
-        return render(request, 'doacao_sucesso.html')
-=======
 def doar(request):
     if request.method == 'POST':
         valor = request.POST.get('value')
@@ -63,7 +49,6 @@ def doar(request):
         
         return render(request, 'doacao_sucesso.html')
     
->>>>>>> 3b6a98d641eb06fce2ff737a6d93776dd5666ab7
     return render(request, 'doar.html')
 
 def ursos(request):

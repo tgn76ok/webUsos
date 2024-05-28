@@ -25,11 +25,7 @@ SECRET_KEY = "django-insecure-p@2omkf-4h3vy7qczq17rier)sce8%f#v1*$^y7t0hv=f&hc9d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = []
-=======
 ALLOWED_HOSTS = ['Tigaz.pythonanywhere.com','127.0.0.1']
->>>>>>> 3b6a98d641eb06fce2ff737a6d93776dd5666ab7
 
 
 # Application definition
@@ -59,11 +55,7 @@ ROOT_URLCONF = "core.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-<<<<<<< HEAD
-        "DIRS": [],
-=======
         'DIRS': [ BASE_DIR / 'base_templates'],
->>>>>>> 3b6a98d641eb06fce2ff737a6d93776dd5666ab7
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -112,36 +104,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-<<<<<<< HEAD
-LANGUAGE_CODE = "en-us"
-
-TIME_ZONE = "UTC"
-=======
 
 LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
->>>>>>> 3b6a98d641eb06fce2ff737a6d93776dd5666ab7
 
 USE_I18N = True
 
 USE_TZ = True
 
 
-<<<<<<< HEAD
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
-
-import os
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-=======
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
@@ -155,14 +127,11 @@ STATIC_ROOT = BASE_DIR / 'static'  # collectstatic
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
->>>>>>> 3b6a98d641eb06fce2ff737a6d93776dd5666ab7
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-<<<<<<< HEAD
-=======
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 from django.contrib.messages import constants
@@ -175,4 +144,3 @@ MESSAGE_TAGS= {
     constants.INFO:'alert-info',
     
 }
->>>>>>> 3b6a98d641eb06fce2ff737a6d93776dd5666ab7

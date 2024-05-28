@@ -1,7 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'global/base.html' %}
+{% load static %}
 
 {% block content %}
-<link rel="stylesheet" href="../static/css/doacao-sucesso.css">
-<h1>Obrigado por sua doação!</h1>
-<p>Sua doação foi recebida com sucesso. Obrigado por ajudar nossos ursos!</p>
+<div class="MianDoar">
+
+
+    <link rel="stylesheet" href="{% static 'global/css/detalhes-style.css' %}">
+    <h1>Obrigado por sua doação!</h1>
+    <p>Sua doação foi recebida com sucesso. Obrigado por ajudar nossos ursos!</p>
+</div>
 {% endblock %}
