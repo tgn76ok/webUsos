@@ -34,3 +34,13 @@
     object-fit: cover;
     
 }
+
+@media only screen and (max-width: 800px) {
+    .urso-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin: 8px 15px;
+    }
+}

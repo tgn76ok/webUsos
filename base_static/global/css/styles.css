@@ -12,17 +12,18 @@ main {
     height: 100vh;
 }
 
-/* conteúdo main */
 .conteudo-main{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .conteudo-left{
   background-color: #eee3e3;
   box-shadow: 8px 8px 4px 0px #00000040;
-  width: 50%;
-  height: 80%;
+  min-width: 370px;
+  max-width: 500px;
+  max-height: 300px;
   top: 25px;
   left: 31px;
   border-radius: 20px;
@@ -30,18 +31,24 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  padding: 10px 0px;
+  margin-right: 20px;
+}
+
+.card-conteudo > h1{
+  text-align: center;
 }
 
 .conteudo-esq{
-  width: 50%;
+  width: 60%;
   height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
-  
+  margin: 0 50px;
+  min-width: 380px;
+  max-width: 650px;
 }
 
 .bottons-main{
@@ -49,13 +56,13 @@ main {
   color: white;
   text-decoration: none;
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   gap: 0px;
   border-radius: 50px ;
   opacity: 0px;
-
-  
+  font-weight: bold;
 }
+
 .text-main{
   text-align: justify;
 }
@@ -120,5 +127,17 @@ main {
   .active {
     background-color: #5A3632;
     color: black;
+  }
+
+  .conteudo-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteudo-esq{
+    height: 100%;
+    margin: 20px;
   }
 }

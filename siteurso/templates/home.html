@@ -2,14 +2,11 @@
 
 {% block content %}
 <div class="conteudo-main">
-
     <div class="conteudo-esq">
-
-
-        <div style="text-align: center;">
+        <div class="title">
             <h1>Sobre nós</h1>
         </div>
-        <div style="text-align: center;     max-width: 700px;">
+        <div>
             <p class="text-main">
                 Caro Amigo dos Ursos, Na natureza, os ursos são símbolos de força, majestade e beleza selvagem. No entanto, enfrentam uma série de desafios que ameaçam sua sobrevivência, estamos comprometidos em proteger esses magníficos animais e garantir que continuem a prosperar em seus habitats naturais. Nossos esforços de conservação abrangem uma variedade de frentes, desde a preservação de habitats críticos até programas de educação para promover a coexistência pacífica entre humanos e ursos. No entanto, para continuar nosso trabalho vital, precisamos da sua ajuda. Sua generosa doação pode fazer toda a diferença       
             </p>
@@ -17,12 +14,8 @@
         <a class="bottons-main" href="{% url 'doar' %}">Faça a sua doação</a>
         
     </div>
-
-    
     <div class="conteudo-left">
-        
         <div class="card-conteudo">
-
             {% if maiores_doacoes %}
             <h1>Maiores Doações</h1>
             <ul>
@@ -33,8 +26,6 @@
             {% else %}
             <p>Nenhuma doação recebida até o momento. Seja o primeiro a fazer uma doação!</p>
             <a href="{% url 'doar' %}">Doar</a>
-            
-            
             {% endif %}
         </div>
     </div>
