@@ -12,16 +12,14 @@
 }
 .urso-details{
     width: 900px;
-    height: 80vh;
+    height: 70vh;
     background-color: var(--color01);
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: solid 1px #555; 
-
     align-items: center;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.411);
-
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.411);
     border-radius: 2%;
 }
 .urso-details > h2{
@@ -61,8 +59,6 @@
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.411);
 
 }
-
-
 .right-detalhes{
     align-items: center;
     justify-content: center;
